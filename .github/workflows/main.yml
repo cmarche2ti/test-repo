@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@main
       - id: foo
         uses: cmarche2ti/my-github-action@main
         with:
