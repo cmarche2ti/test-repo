@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v2
       - id: foo
-        uses: cmarche2ti/my-github-action@main
+        uses: cmarche2ti/my-github-action@v1.1
         with:
           who-to-greet: "Chris"
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
