@@ -5,6 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to propogate changes
     steps:
+      - name: Checkout test-repo
+        uses: actions/checkout@v2
+        with:
+          repository: cmarche2ti/test-repo
       - name: Checkout test-repo-2
         uses: actions/checkout@v2
         with:
