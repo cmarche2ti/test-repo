@@ -17,9 +17,10 @@ jobs:
           source_file: "setup.py"
           destination_repo: "cmarche2ti/test-repo-2"
           destination_folder: ""
+          destination_branch_create: "auto_update"
           user_email: "cmarche2ti@gmail.com"
           user_name: "cmarche2ti"
-          commit_message: "A custom message for the commit"
+          commit_message: ""
       # - name: Checkout test-repo-2
       #   uses: actions/checkout@v2
       #   with:
